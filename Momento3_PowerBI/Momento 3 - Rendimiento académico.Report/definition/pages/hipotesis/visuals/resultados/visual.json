@@ -1,0 +1,192 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "resultados",
+  "position": {
+    "x": 20,
+    "y": 120,
+    "width": 1240,
+    "height": 225,
+    "z": 12020
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "Pregunta"
+                }
+              },
+              "queryRef": "Hipótesis.Pregunta",
+              "nativeQueryRef": "Pregunta"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "Variables"
+                }
+              },
+              "queryRef": "Hipótesis.Variables",
+              "nativeQueryRef": "Variables"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "N"
+                }
+              },
+              "queryRef": "Hipótesis.N",
+              "nativeQueryRef": "N"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "Estimación"
+                }
+              },
+              "queryRef": "Hipótesis.Estimación",
+              "nativeQueryRef": "Estimación"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "p unilateral"
+                }
+              },
+              "queryRef": "Hipótesis.p unilateral",
+              "nativeQueryRef": "p unilateral"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "Prueba"
+                }
+              },
+              "queryRef": "Hipótesis.Prueba",
+              "nativeQueryRef": "Prueba"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hipótesis"
+                    }
+                  },
+                  "Property": "Decisión al 5 %"
+                }
+              },
+              "queryRef": "Hipótesis.Decisión al 5 %",
+              "nativeQueryRef": "Decisión al 5 %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Resultados de las dos pruebas'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#152C43'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

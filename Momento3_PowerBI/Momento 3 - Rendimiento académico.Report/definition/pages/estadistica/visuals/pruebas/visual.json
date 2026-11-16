@@ -1,0 +1,206 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "pruebas",
+  "position": {
+    "x": 20,
+    "y": 119,
+    "width": 1240,
+    "height": 291,
+    "z": 11920
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "Factor"
+                }
+              },
+              "queryRef": "ANOVA.Factor",
+              "nativeQueryRef": "Factor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "Grupos"
+                }
+              },
+              "queryRef": "ANOVA.Grupos",
+              "nativeQueryRef": "Grupos"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "N"
+                }
+              },
+              "queryRef": "ANOVA.N",
+              "nativeQueryRef": "N"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "F"
+                }
+              },
+              "queryRef": "ANOVA.F",
+              "nativeQueryRef": "F"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "p ANOVA"
+                }
+              },
+              "queryRef": "ANOVA.p ANOVA",
+              "nativeQueryRef": "p ANOVA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "Eta cuadrado"
+                }
+              },
+              "queryRef": "ANOVA.Eta cuadrado",
+              "nativeQueryRef": "Eta cuadrado"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "p Levene"
+                }
+              },
+              "queryRef": "ANOVA.p Levene",
+              "nativeQueryRef": "p Levene"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ANOVA"
+                    }
+                  },
+                  "Property": "p Kruskal"
+                }
+              },
+              "queryRef": "ANOVA.p Kruskal",
+              "nativeQueryRef": "p Kruskal"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ANOVA de un factor, homogeneidad de varianzas y contraste por rangos'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#152C43'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
